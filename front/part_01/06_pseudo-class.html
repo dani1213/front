@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div, input {
+      margin: 10px;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      transition: 1s; /* 전환 효과 */
+    }
+    .d1:hover { /* 커서가 올라가있는 동안 */
+      width: 300px;
+      background-color: royalblue;
+    }
+    .d1:active { /* 클릭하고 있는 동안 */
+      width: 300px;
+      background-color: green;
+    }
+    .d2:focus {
+      width: 300px;
+      background-color: firebrick;
+    }
+    input:focus {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="d1"></div>
+  <!-- tabindex="-1" : focus가 가능하지 않은 요소를 가능하게 -->
+  <div class="d2" tabindex="-1"></div>
+  <input type="text">
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div { /* 9999~ */
+      color: red !important;
+    }
+    #yellow { /* 100 */
+      color: yellow;
+    }
+    .green { /* 10 */
+      color: green;
+    }
+    div { /* 1 */
+      color: blue;
+    }
+    * { /* 0 */
+      color: darkblue;
+    }
+    body { /* X */
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <!-- 1000 -->
+  <div style="color: orange;" id="yellow" class="green">
+    Hello world
+  </div>
+</body>
+</html>
