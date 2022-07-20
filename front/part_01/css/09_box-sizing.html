@@ -10,21 +10,23 @@
       width: 100px;
       height: 100px;
       background-color: orange;
+      margin: 10px;
     }
-    div::before {
-      content: "앞";
+    .d2 {
+      border: 3px solid royalblue;
+      padding: 10px;
+      box-sizing: content-box; /* 기본값 */
     }
-    /* HTML이 아닌 CSS로, 가상 요소를 통해, 텍스트를 넣지 않아도, 모양 부여 */
-    div::after {
-      content: "";
-      display: block; /* inline 요소를 block 요소로 변경 */
-      width: 30px;
-      height: 30px;
-      background-color: royalblue;
+    .d3 {
+      border: 3px solid royalblue;
+      padding: 10px;
+      box-sizing: border-box;
     }
   </style>
 </head>
 <body>
-  <div>Hello</div>
+  <div class="d1">100*100</div>
+  <div class="d2">126*126</div>
+  <div class="d3">100*100</div>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .parent {
+      width: 200px;
+      height: 150px;
+      background-color: orange;
+      padding: 10px;
+      margin: 10px;
+    }
+    .child {
+      width: 300px;
+      height: 100px;
+      background-color: royalblue;
+    }
+    #p1 {
+      overflow: visible; /* 기본값 */
+    }
+    #p2 {
+      overflow: hidden;
+    }
+    #p3 {
+      overflow: scroll;
+    }
+    #p4 {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent" id="p1">
+    <div class="child">isible, 가나다라마바사아자차카타파하</div>
+  </div>
+  <div class="parent" id="p2">
+    <div class="child">hidden, 가나다라마바사아자차카타파하</div>
+  </div>
+  <div class="parent" id="p3">
+    <div class="child">scroll, 가나다라마바사아자차카타파하</div>
+  </div>
+  <div class="parent" id="p4">
+    <div class="child">auto, 가나다라마바사아자차카타파하</div>
+  </div>
+</body>
+</html>

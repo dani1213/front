@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+    }
+    div::before {
+      content: "앞";
+    }
+    /* HTML이 아닌 CSS로, 가상 요소를 통해, 텍스트가 없어도, 모양 부여 */
+    div::after {
+      content: "";
+      display: block; /* inline 요소를 block 요소로 변환 -> 텍스트가 없어도 모양 부여 */
+      width: 30px;
+      height: 30px;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+<body>
+  <div>Hello</div>
+</body>
+</html>
