@@ -14,21 +14,15 @@
       padding: 10px;
     }
     .child {
-      width: 150px;
-      height: 100px;
+      width: 300px;
+      height: 250px;
       background-color: royalblue;
     }
-    #p1 {
-      overflow: visible; /* 기본값 */
-    }
     #p2 {
-      overflow: hidden;
+      overflow-x: hidden;
     }
     #p3 {
-      overflow: scroll;
-    }
-    #p4 {
-      overflow: auto;
+      overflow-y: hidden;
     }
   </style>
 </head>
@@ -40,9 +34,6 @@
     <div class="child">가나다라마바사아자차카타파하</div>
   </div>
   <div class="parent" id="p3">
-    <div class="child">가나다라마바사아자차카타파하</div>
-  </div>
-  <div class="parent" id="p4">
     <div class="child">가나다라마바사아자차카타파하</div>
   </div>
 </body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 300px;
+      background-color: orange;
+      position: relative;
+    }
+    .c {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      border: 5px solid firebrick;
+      color: white;
+    }
+    .c:nth-child(1) {
+      position: relative;
+      z-index: 1;
+    }
+    .c:nth-child(2) {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+    .c:nth-child(3) {
+      position: static;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="p">
+    <div class="c">1</div>
+    <div class="c">2</div>
+    <div class="c">3</div>
+  </div>
+</body>
+</html>
