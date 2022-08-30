@@ -1,0 +1,170 @@
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.4;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block; /* inline 요소의 baseline -> img 밑에 공간 생성 ... 요소 변경 -> baseline 삭제 */
+}
+
+
+
+header {
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #c8c8c8;
+}
+header > .inner {
+  height: 120px;
+}
+header .inner .logo {
+  height: 75px;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+header .inner .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+header .inner .sub-menu .menu {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+header .inner .sub-menu .menu li {
+  position: relative;
+}
+header .inner .sub-menu .menu li::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+header .inner .sub-menu .menu li:first-child::before {
+  display: none;
+}
+header .inner .sub-menu .menu li a {
+  display: block;
+  font-size: 12px;
+  color: #656565;
+  padding: 11px 16px;
+}
+header .inner .sub-menu .menu li a:hover {
+  color: #000;
+}
+header .inner .sub-menu .search {
+  height: 34px;
+  position: relative;
+}
+header .inner .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  outline: none; /* 클릭 시 테두리 변화 ... 삭제 */
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #777;
+  font-size: 12px;
+  padding: 4px 10px;
+  transition: width 0.4s;
+}
+header .inner .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+header .inner .sub-menu .search .material-symbols-outlined {
+  height: 24px;
+  margin: auto;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+}
+header .inner .sub-menu .search.focused .material-symbols-outlined {
+  opacity: 0;
+}
+header .inner .main-menu {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+header .inner .main-menu .item {}
+header .inner .main-menu .item .item__name {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px 34px 20px;
+}
+header .inner .main-menu .item:hover .item__name {
+  background-color: #2c2a29;
+  border-radius: 6px 6px 0 0;
+  color: #669900;
+}
+header .inner .main-menu .item .item__contents {
+  display: none;
+  width: 100%;
+  position: fixed;
+  left: 0;
+}
+header .inner .main-menu .item:hover .item__contents {
+  display: block;
+}
+header .inner .main-menu .item .item__contents .contents__menu {
+  background-color: #2c2a29;
+}
+header .inner .main-menu .item .item__contents .contents__menu .inner {
+  display: flex;
+  padding: 20px 0;
+}
+header .inner .main-menu .item .item__contents .contents__menu .inner > li {
+  width: 220px;
+}
+header .inner .main-menu .item .item__contents .contents__menu .inner > li h4 {
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 0 12px 0;
+}
+header .inner .main-menu .item .item__contents .contents__menu .inner > li ul li {
+  color: #999;
+  font-size: 12px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+header .inner .main-menu .item .item__contents .contents__menu .inner > li ul li:hover {
+  color: #669900;
+}
+header .inner .main-menu .item .item__contents .contents__texture {
+  background-image: url("../images/main_menu_pattern.jpg");
+  font-size: 12px;
+  padding: 26px 0;
+}
+header .inner .main-menu .item .item__contents .contents__texture .inner {}
+header .inner .main-menu .item .item__contents .contents__texture .inner h4 {
+  color: #999;
+  font-weight: 700;
+}
+header .inner .main-menu .item .item__contents .contents__texture .inner p {
+  color: #669900;
+  margin: 4px 0 14px;
+}
